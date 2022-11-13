@@ -7,8 +7,8 @@ public class Main {
 
         int totalAmount = amount + addCost + bonus;
 
-        if (addCost == 100) {
-            System.out.printf("Общая сумма с бонусом: " + (totalAmount - 1));
+        if (addCost <= 1000) {
+            System.out.printf("Общая сумма с бонусом: " + (totalAmount - bonus));
         } else {
             System.out.printf("Общая сумма с бонусом: " + totalAmount);
         }
